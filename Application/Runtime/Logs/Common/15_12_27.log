@@ -1,0 +1,6 @@
+[ 2015-12-27T16:12:19+08:00 ] 127.0.0.1 /index.php/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+ERR: 无法加载模块:Images
+
