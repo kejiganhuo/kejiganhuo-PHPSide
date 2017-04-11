@@ -33,7 +33,7 @@
                     <div class="form-group">
                         <label for="inputname" class="col-sm-2 control-label">菜单名:</label>
                         <div class="col-sm-5">
-                            <input type="text" name="name" class="form-control" id="inputname" placeholder="请填写菜单名" value="{$menu.name}">
+                            <input type="text" name="name" class="form-control" id="inputname" placeholder="请填写菜单名" value="{$menus.name}">
                         </div>
                     </div>
 
@@ -48,19 +48,19 @@
                     <div class="form-group">
                         <label for="inputPassword3" class="col-sm-2 control-label">模块名:</label>
                         <div class="col-sm-5">
-                            <input type="text" class="form-control" name="m" id="inputPassword3" placeholder="模块名如admin" value="{$menu.m}">
+                            <input type="text" class="form-control" name="m" id="inputPassword3" placeholder="模块名如admin" value="{$menus.m}">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="inputPassword3" class="col-sm-2 control-label">控制器:</label>
                         <div class="col-sm-5">
-                            <input type="text" class="form-control" name="c" id="inputPassword3" placeholder="控制器如index" value="{$menu.c}">
+                            <input type="text" class="form-control" name="c" id="inputPassword3" placeholder="控制器如index" value="{$menus.c}">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="inputPassword3" class="col-sm-2 control-label">方法:</label>
                         <div class="col-sm-5">
-                            <input type="text" class="form-control" name="f" id="inputPassword3" placeholder="方法名如index" value="{$menu.f}">
+                            <input type="text" class="form-control" name="f" id="inputPassword3" placeholder="方法名如index" value="{$menus.f}">
                         </div>
                     </div>
                     <!--<div class="form-group">
@@ -80,7 +80,7 @@
                         </div>
 
                     </div>
-                    <input type="hidden" name="menu_id" value="{$menu.menu_id}"/>
+                    <input type="hidden" name="menu_id" value="{$menus.menu_id}"/>
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                         <button type="button" class="btn btn-default" id="singcms-button-submit">更新</button>

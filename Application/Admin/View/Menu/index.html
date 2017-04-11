@@ -31,10 +31,9 @@
                 <div class="input-group">
                     <span class="input-group-addon">类型</span>
                     <select class="form-control" name="type">
-                        <option value='' >请选择类型</option>
-
-                        <option value="1" >后台菜单</option>
-                        <option value="0" >前端导航</option>
+                        <option value='-1' <if condition="$type eq -1">selected="selected"</if>>请选择类型</option>
+						<option value="1" <if condition="$type eq 1">selected="selected"</if>>后台菜单</option>
+                        <option value="0" <if condition="$type eq 0">selected="selected"</if>>前端导航</option>
                     <lect>
                 </div>
 
@@ -45,9 +44,6 @@
                 </span>
 
             </form>
-        </div>
-        <div>
-          <button  id="button-add" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加 </button>
         </div>
         <div class="row">
             <div class="col-lg-6">
@@ -67,24 +63,27 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <volist name="menus" id="menu">
+                        <volist name="menus" id="menus">
                             <tr>
                                 <td><input size="4" type="text" name="" value=""/></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><span class="glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id=""></span>    <a href="javascript:void(0)" attr-id="" id="singcms-delete"  attr-a="menu" attr-message="删除"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a></td>
+                                <td>{$menus.menu_id}</td>
+                                <td>{$menus.name}</td>
+                                <td>{$menus.m}</td>
+                                <td>{$menus.type}</td>
+                                <td>{$menus.status}</td>
+                                <td><span class="glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="{$menus.menu_id}"></span>    <a href="javascript:void(0)" attr-id="{$menus.menu_id}" id="singcms-delete"  attr-a="menu" attr-message="删除"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a></td>
                             </tr>
                         </volist>
 
                         </tbody>
                     </table>
+                    <div>
+                         <button  id="button-add" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加 </button>
+                    </div>
                     </form>
                     <nav>
                         <ul class="pagination">
-                            
+                            {$pageRes}
                         </ul>
                     </nav>
                     

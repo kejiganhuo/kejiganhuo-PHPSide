@@ -1,0 +1,2987 @@
+[ 2017-04-10T20:48:58+08:00 ] ::1 /admin.php?c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000318s ]
+
+[ 2017-04-10T20:49:04+08:00 ] ::1 /admin.php?c=login&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+ERR: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2017-04-10T20:49:21+08:00 ] ::1 /admin.php?c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2017-04-10T20:49:25+08:00 ] ::1 /admin.php?c=login&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 3 for show(), called in D:\xampp\htdocs\Application\Admin\Controller\LoginController.class.php on line 38 and defined D:\xampp\htdocs\Application\Common\Common\function.php 第 5 行.
+NOTIC: [8] Undefined variable: data D:\xampp\htdocs\Application\Common\Common\function.php 第 9 行.
+
+[ 2017-04-10T20:49:27+08:00 ] ::1 /admin.php?c=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005840s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000243s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000272s ]
+
+[ 2017-04-10T20:49:28+08:00 ] ::1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 41 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005330s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000324s ]
+
+[ 2017-04-10T20:49:35+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&p=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000257s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 9,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000232s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000260s ]
+
+[ 2017-04-10T20:49:37+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&p=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000259s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 6,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000274s ]
+
+[ 2017-04-10T20:49:38+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000258s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 3,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000245s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000276s ]
+
+[ 2017-04-10T20:49:39+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000251s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000282s ]
+
+[ 2017-04-10T20:49:43+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 3,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003983s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000243s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000273s ]
+
+[ 2017-04-10T20:49:44+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&p=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000257s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 6,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000309s ]
+
+[ 2017-04-10T20:49:45+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&p=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 9,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003955s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000262s ]
+
+[ 2017-04-10T20:49:46+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000260s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003969s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2017-04-10T20:52:01+08:00 ] ::1 /admin.php?c=login&a=loginout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+NOTIC: [8] Undefined variable: module D:\xampp\htdocs\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var D:\xampp\htdocs\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\xampp\htdocs\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\xampp\htdocs\ThinkPHP\Common\functions.php 第 990 行.
+
+[ 2017-04-10T20:52:01+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000328s ]
+
+[ 2017-04-10T20:52:02+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002835s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000279s ]
+
+[ 2017-04-10T20:52:05+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002494s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000258s ]
+
+[ 2017-04-10T20:52:06+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000303s ]
+
+[ 2017-04-10T20:52:42+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000271s ]
+
+[ 2017-04-10T20:53:47+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003639s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003685s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2017-04-10T20:53:48+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000269s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000269s ]
+
+[ 2017-04-10T20:56:40+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002955s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000306s ]
+
+[ 2017-04-10T20:56:41+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000269s ]
+
+[ 2017-04-10T20:58:23+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002543s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000263s ]
+
+[ 2017-04-10T20:58:24+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002864s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000237s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000266s ]
+
+[ 2017-04-10T20:59:23+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000282s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000312s ]
+
+[ 2017-04-10T20:59:24+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002499s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000262s ]
+
+[ 2017-04-10T21:08:58+08:00 ] ::1 /admin.php?c=login&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for show(), called in D:\xampp\htdocs\Application\Admin\Controller\LoginController.class.php on line 38 and defined D:\xampp\htdocs\Application\Common\Common\function.php 第 5 行.
+NOTIC: [8] Undefined variable: data D:\xampp\htdocs\Application\Common\Common\function.php 第 9 行.
+
+[ 2017-04-10T21:08:59+08:00 ] ::1 /admin.php?c=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000321s ]
+
+[ 2017-04-10T21:09:01+08:00 ] ::1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 42 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 46 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000311s ]
+
+[ 2017-04-10T21:09:03+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 3,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 46 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004118s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000281s ]
+
+[ 2017-04-10T21:09:05+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&p=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 6,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 46 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000280s ]
+
+[ 2017-04-10T21:09:06+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&p=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 9,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 46 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000236s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000264s ]
+
+[ 2017-04-10T21:09:07+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 46 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004063s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000286s ]
+
+[ 2017-04-10T21:09:13+08:00 ] ::1 /admin.php?type=1&c=menu&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 42 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `cms_menu` WHERE `type` = 1 AND `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `type` = 1 AND `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 46 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004373s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000279s ]
+
+[ 2017-04-10T21:12:03+08:00 ] ::1 /admin.php?type=1&c=menu&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 42 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `cms_menu` WHERE `type` = 1 AND `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `type` = 1 AND `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 46 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000323s ]
+
+[ 2017-04-10T21:12:06+08:00 ] ::1 /admin.php?type=0&c=menu&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 42 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `cms_menu` WHERE `type` = 0 AND `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `type` = 0 AND `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 46 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004358s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000410s ]
+
+[ 2017-04-10T21:12:09+08:00 ] ::1 /admin.php?type=&c=menu&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 42 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `cms_menu` WHERE `type` = 0 AND `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `type` = 0 AND `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 46 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004127s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000271s ]
+
+[ 2017-04-10T21:12:13+08:00 ] ::1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 42 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 46 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+NOTIC: [8] Undefined variable: type D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 114 行.
+NOTIC: [8] Undefined variable: type D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 115 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000247s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000279s ]
+
+[ 2017-04-10T21:13:24+08:00 ] ::1 /admin.php?type=&c=menu&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 44 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `cms_menu` WHERE `type` = 0 AND `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `type` = 0 AND `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000319s ]
+
+[ 2017-04-10T21:13:27+08:00 ] ::1 /admin.php?type=-1&c=menu&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 44 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000276s ]
+
+[ 2017-04-10T21:18:21+08:00 ] ::1 /admin.php?type=-1&c=menu&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 44 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2017-04-10T21:18:27+08:00 ] ::1 /admin.php?type=-1&c=menu&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000268s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 44 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004217s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000276s ]
+
+[ 2017-04-10T21:19:35+08:00 ] ::1 /admin.php?type=-1&c=menu&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 44 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 151 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 151 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 151 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004657s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000319s ]
+
+[ 2017-04-10T21:19:53+08:00 ] ::1 /admin.php?type=-1&c=menu&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 44 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000237s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000269s ]
+
+[ 2017-04-10T21:19:56+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&type=-1&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000268s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 3,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000245s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000276s ]
+
+[ 2017-04-10T21:20:06+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&type=-1&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 3,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000317s ]
+
+[ 2017-04-10T21:20:07+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&type=-1&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 3,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000256s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000293s ]
+
+[ 2017-04-10T21:22:03+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&type=-1&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 3,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004181s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000270s ]
+
+[ 2017-04-10T21:22:03+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&type=-1&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 3,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000245s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000277s ]
+
+[ 2017-04-10T21:22:06+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&type=-1&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000268s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000243s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000276s ]
+
+[ 2017-04-10T21:22:13+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&type=-1&p=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 9,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004495s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000307s ]
+
+[ 2017-04-10T21:22:14+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&type=-1&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000268s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000275s ]
+
+[ 2017-04-10T21:22:20+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&type=-1&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000323s ]
+
+[ 2017-04-10T21:22:57+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&type=-1&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004574s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000274s ]
+
+[ 2017-04-10T21:23:01+08:00 ] ::1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 44 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004512s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000262s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000318s ]
+
+[ 2017-04-10T21:23:54+08:00 ] ::1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 44 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000273s ]
+
+[ 2017-04-10T21:23:54+08:00 ] ::1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 44 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000277s ]
+
+[ 2017-04-10T21:23:56+08:00 ] ::1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 44 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000247s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000279s ]
+
+[ 2017-04-10T21:23:57+08:00 ] ::1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 44 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000277s ]
+
+[ 2017-04-10T21:24:00+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&p=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 6,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004494s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000278s ]
+
+[ 2017-04-10T21:24:03+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005474s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000282s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000319s ]
+
+[ 2017-04-10T21:25:49+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+NOTIC: [8] Undefined variable: module D:\xampp\htdocs\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var D:\xampp\htdocs\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\xampp\htdocs\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\xampp\htdocs\ThinkPHP\Common\functions.php 第 990 行.
+
+[ 2017-04-10T21:25:49+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002768s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000303s ]
+
+[ 2017-04-10T21:25:56+08:00 ] ::1 /admin.php?c=login&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for show(), called in D:\xampp\htdocs\Application\Admin\Controller\LoginController.class.php on line 38 and defined D:\xampp\htdocs\Application\Common\Common\function.php 第 5 行.
+NOTIC: [8] Undefined variable: data D:\xampp\htdocs\Application\Common\Common\function.php 第 9 行.
+
+[ 2017-04-10T21:25:57+08:00 ] ::1 /admin.php?c=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000256s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003730s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000302s ]
+
+[ 2017-04-10T21:25:58+08:00 ] ::1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 44 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004480s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000313s ]
+
+[ 2017-04-10T21:26:08+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 3,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000274s ]
+
+[ 2017-04-10T21:26:12+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004186s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000237s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000269s ]
+
+[ 2017-04-10T21:27:25+08:00 ] ::1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 44 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004358s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000273s ]
+
+[ 2017-04-10T21:27:28+08:00 ] ::1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000256s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 44 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000269s ]
+
+[ 2017-04-10T21:28:17+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004839s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000315s ]
+
+[ 2017-04-10T21:28:20+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000282s ]
+
+[ 2017-04-10T21:28:23+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000274s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 3,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000279s ]
+
+[ 2017-04-10T21:28:26+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000274s ]
+
+[ 2017-04-10T21:28:28+08:00 ] ::1 /admin.php?m=Admin&c=Menu&a=index&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 3,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004165s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000270s ]
+
+[ 2017-04-10T21:28:34+08:00 ] ::1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 44 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004168s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000245s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000277s ]
+
+[ 2017-04-10T21:32:04+08:00 ] ::1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 44 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2017-04-10T21:32:06+08:00 ] ::1 /admin.php?c=menu&a=edit&id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000258s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 114 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 121 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 122 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 129 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 135 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 141 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 156 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 157 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 161 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003928s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000272s ]
+
+[ 2017-04-10T21:32:10+08:00 ] ::1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000260s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 44 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000269s ]
+
+[ 2017-04-10T21:32:22+08:00 ] ::1 /admin.php?c=menu&a=edit&id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 114 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 121 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 122 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 129 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 135 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 141 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 156 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 157 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 161 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004144s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000309s ]
+
+[ 2017-04-10T21:32:24+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined variable: menus D:\xampp\htdocs\Application\Runtime\Cache\Admin\31553d7bb41170a30982ff9dddd5d67e.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004271s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000243s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000274s ]
+
+[ 2017-04-10T21:32:26+08:00 ] ::1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+NOTIC: [8] Undefined index: p D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 44 行.
+NOTIC: [8] Undefined index: pageSize D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+NOTIC: [2] log() expects parameter 1 to be double, array given D:\xampp\htdocs\Application\Common\Model\MenuModel.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant console - assumed 'console' D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+NOTIC: [2] log() expects parameter 1 to be double, string given D:\xampp\htdocs\Application\Admin\Controller\MenuController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined variable: nav D:\xampp\htdocs\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004284s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000271s ]
+
+[ 2017-04-10T21:32:29+08:00 ] ::1 /admin.php?c=menu&a=edit&id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000257s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 114 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 121 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 122 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 129 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 135 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 141 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 156 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 157 行.
+NOTIC: [8] Undefined variable: menu D:\xampp\htdocs\Application\Runtime\Cache\Admin\a77aa83c121d51b6cd699ea2b65451f6.php 第 161 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000232s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000260s ]
+
+[ 2017-04-10T21:43:22+08:00 ] ::1 /admin.php?c=login&a=loginout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+NOTIC: [8] Undefined variable: module D:\xampp\htdocs\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var D:\xampp\htdocs\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\xampp\htdocs\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\xampp\htdocs\ThinkPHP\Common\functions.php 第 990 行.
+
+[ 2017-04-10T21:43:22+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002736s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000313s ]
+
+[ 2017-04-10T21:43:24+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002634s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000236s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000265s ]
+
+[ 2017-04-10T21:44:24+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002793s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000311s ]
+
+[ 2017-04-10T21:44:25+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000259s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000270s ]
+
+[ 2017-04-10T21:44:41+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002736s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000299s ]
+
+[ 2017-04-10T21:44:42+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000267s ]
+
+[ 2017-04-10T21:45:01+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000236s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000265s ]
+
+[ 2017-04-10T21:45:02+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2017-04-10T21:45:25+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003220s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000356s ]
+
+[ 2017-04-10T21:45:59+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000305s ]
+
+[ 2017-04-10T21:46:00+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000236s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000265s ]
+
+[ 2017-04-10T21:46:50+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002520s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000236s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000266s ]
+
+[ 2017-04-10T21:47:54+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000316s ]
+
+[ 2017-04-10T21:56:00+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002793s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000308s ]
+
+[ 2017-04-10T21:56:01+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000397s ]
+
+[ 2017-04-10T21:56:32+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000284s ]
+
+[ 2017-04-10T21:56:33+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002594s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000235s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000264s ]
+
+[ 2017-04-10T21:56:33+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002518s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000264s ]
+
+[ 2017-04-10T21:56:55+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002524s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000237s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000266s ]
+
+[ 2017-04-10T21:56:56+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002612s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000236s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000266s ]
+
+[ 2017-04-10T21:57:12+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000271s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002619s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000235s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000265s ]
+
+[ 2017-04-10T21:57:13+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002650s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000235s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000265s ]
+
+[ 2017-04-10T21:57:52+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000313s ]
+
+[ 2017-04-10T21:58:07+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002581s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000264s ]
+
+[ 2017-04-10T21:58:08+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002560s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002597s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000270s ]
+
+[ 2017-04-10T21:58:39+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002543s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002581s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000270s ]
+
+[ 2017-04-10T21:58:56+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000305s ]
+
+[ 2017-04-10T21:59:04+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000303s ]
+
+[ 2017-04-10T21:59:43+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000275s ]
+
+[ 2017-04-10T21:59:44+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002702s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000267s ]
+
+[ 2017-04-10T22:00:42+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000304s ]
+
+[ 2017-04-10T22:00:43+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000264s ]
+
+[ 2017-04-10T22:01:20+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002528s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000235s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000265s ]
+
+[ 2017-04-10T22:01:21+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000236s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000266s ]
+
+[ 2017-04-10T22:01:27+08:00 ] ::1 /admin.php?c=login&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for show(), called in D:\xampp\htdocs\Application\Admin\Controller\LoginController.class.php on line 38 and defined D:\xampp\htdocs\Application\Common\Common\function.php 第 5 行.
+NOTIC: [8] Undefined variable: data D:\xampp\htdocs\Application\Common\Common\function.php 第 9 行.
+
+[ 2017-04-10T22:01:28+08:00 ] ::1 /admin.php?c=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000270s ]
+
+[ 2017-04-10T22:01:44+08:00 ] ::1 /admin.php?c=login&a=loginout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+NOTIC: [8] Undefined variable: module D:\xampp\htdocs\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var D:\xampp\htdocs\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\xampp\htdocs\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\xampp\htdocs\ThinkPHP\Common\functions.php 第 990 行.
+
+[ 2017-04-10T22:01:44+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000259s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002471s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000233s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000262s ]
+
+[ 2017-04-10T22:01:45+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002581s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000270s ]
+

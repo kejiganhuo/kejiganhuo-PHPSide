@@ -1,16 +1,15 @@
-<?php if (!defined('THINK_PATH')) exit();?>
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="icon" href="">
 
-  <title>singcms内容管理平台</title>
+  <title>科技干货新闻</title>
 
   <!-- Bootstrap core CSS -->
   <link href="/Public/css/bootstrap.min.css" rel="stylesheet">
@@ -23,26 +22,29 @@
   <!--[if lt IE 9]>
 
   <![endif]-->
+<style>
+  .body_center{
+    width:450px;
+    margin: 0 auto;
+  }
+	.center{
+		text-align: center;
+	}
+</style>
 </head>
 
-<body>
-<style>
-  .s_center {
-    margin-left: auto;
-    margin-right: auto;
-  }
-</style>
-<div class="s_center container col-lg-6 ">
+<body class="body_center">
+<div class="body_center container col-lg-6 ">
 
     <form class="form-signin" enctype="multipart/form-data"  method="post">
-      <h2 class="form-signin-heading">请登录</h2>
-      <label class="sr-only">用户名</label>
+      <h2 class="center form-signin-heading">科技干货新闻中心后台</h2>
+      <label class="sr-only">用 户</label>
       <input type="text"  class="form-control" name="username" placeholder="请填写用户名" required autofocus>
       <br />
-      <label  class="sr-only">密码</label>
+      <label class="sr-only">密 码</label>
       <input type="password" name="password" id="inputPassword" class="form-control" placeholder="密码" required>
       <br />
-      <button class="btn btn-lg btn-primary btn-block" type="button" onclick="login.check()">登录</button>
+      <button class="btn btn-lg btn-primary btn-block" type="button" onclick="login.check()" style="width:70px">登录</button>
     </form>
 
 </div> <!-- /container -->

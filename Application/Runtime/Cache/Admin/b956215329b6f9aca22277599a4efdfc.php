@@ -76,7 +76,7 @@
         <a href=""><i class="fa fa-fw fa-dashboard"></i> 首页</a>
       </li>
       <li>
-        <a href=""><i class="fa fa-fw fa-bar-chart-o"></i>菜单管理</a>
+        <a href="/admin.php?c=menu"><i class="fa fa-fw fa-bar-chart-o"></i>菜单管理</a>
       </li>
 
     </ul>
@@ -109,10 +109,9 @@
                 <div class="input-group">
                     <span class="input-group-addon">类型</span>
                     <select class="form-control" name="type">
-                        <option value='' >请选择类型</option>
-
-                        <option value="1" >后台菜单</option>
-                        <option value="0" >前端导航</option>
+                        <option value='-1' <?php if($type == -1): ?>selected="selected"<?php endif; ?>>请选择类型</option>
+						<option value="1" <?php if($type == 1): ?>selected="selected"<?php endif; ?>>后台菜单</option>
+                        <option value="0" <?php if($type == 0): ?>selected="selected"<?php endif; ?>>前端导航</option>
                     <lect>
                 </div>
 
@@ -123,9 +122,6 @@
                 </span>
 
             </form>
-        </div>
-        <div>
-          <button  id="button-add" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加 </button>
         </div>
         <div class="row">
             <div class="col-lg-6">
@@ -145,22 +141,25 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <?php if(is_array($menus)): $i = 0; $__LIST__ = $menus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$menu): $mod = ($i % 2 );++$i;?><tr>
+                        <?php if(is_array($menus)): $i = 0; $__LIST__ = $menus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$menus): $mod = ($i % 2 );++$i;?><tr>
                                 <td><input size="4" type="text" name="" value=""/></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><span class="glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id=""></span>    <a href="javascript:void(0)" attr-id="" id="singcms-delete"  attr-a="menu" attr-message="删除"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a></td>
+                                <td><?php echo ($menus["menu_id"]); ?></td>
+                                <td><?php echo ($menus["name"]); ?></td>
+                                <td><?php echo ($menus["m"]); ?></td>
+                                <td><?php echo ($menus["type"]); ?></td>
+                                <td><?php echo ($menus["status"]); ?></td>
+                                <td><span class="glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="<?php echo ($menus["menu_id"]); ?>"></span>    <a href="javascript:void(0)" attr-id="<?php echo ($menus["menu_id"]); ?>" id="singcms-delete"  attr-a="menu" attr-message="删除"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a></td>
                             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 
                         </tbody>
                     </table>
+                    <div>
+                         <button  id="button-add" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加 </button>
+                    </div>
                     </form>
                     <nav>
                         <ul class="pagination">
-                            
+                            <?php echo ($pageRes); ?>
                         </ul>
                     </nav>
                     
