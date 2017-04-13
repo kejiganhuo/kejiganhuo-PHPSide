@@ -65,7 +65,7 @@
                         <tbody>
                         <volist name="menus" id="menus">
                             <tr>
-                                <td><input size="4" type="text" name="" value=""/></td>
+                                <td><input size="4" type="text" name="listorder[{$menus.menu_id}]" value="{$menus.listorder}"/></td>
                                 <td>{$menus.menu_id}</td>
                                 <td>{$menus.name}</td>
                                 <td>{$menus.m}</td>
@@ -78,7 +78,7 @@
                         </tbody>
                     </table>
                     <div>
-                         <button  id="button-add" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加 </button>
+                         <button  id="button-listorder" type="button" class="btn btn-primary dropdown-toggle" d><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>更新排序 </button>
                     </div>
                     </form>
                     <nav>
@@ -86,7 +86,9 @@
                             {$pageRes}
                         </ul>
                     </nav>
-                    
+                    <div>
+                        <button  id="button-add" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加 </button>
+                    </div>
                 </div>
             </div>
 

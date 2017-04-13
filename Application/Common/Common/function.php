@@ -31,3 +31,19 @@ function status($status){
 		$str ='删除';
 	}
 }
+//得到菜单
+function getAdminMenuUrl($nav){
+    $url = '/admin.php?c='.$nav['c'].'&a='.$nav['a'];
+    if($nav['f']=='index'){
+        $url = '/admin.php?c='.$nav['c'];
+    }
+    return $url;
+}
+//导航样式高亮
+function getActive($navc){
+    $c = strtolower(CONTROLLER_NAME);
+    if(strtolower($navc) == $c){
+        return 'class="active"';
+    }
+    return '';
+}

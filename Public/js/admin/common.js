@@ -67,6 +67,7 @@ $('.singcms-table #singcms-delete').on('click',function(){
 		
 	})
 });
+//
 function todelete(url,data){
 	$.post(
 		url,
@@ -81,3 +82,25 @@ function todelete(url,data){
 		}
 	,"JSON");
 }
+/**
+*排序JS操作
+*/
+$('#button-listorder').click(function(){
+	//获取 listorder内容
+	var data = $("#singcms-listorder").serializeArray();
+	postData = {};
+	//遍历
+	$(data).each(function(i){
+		postData[this.name] =this.value;
+	});
+	var url = SCOPE.listorder_url;
+	$.post(url,postData,function(result){
+		if(result.status == 1){
+			//成功
+			return dialog.success(result.message,result['data']['jump_url']);
+		}else if(result.status == 0){
+			//失败
+			return dialog.error(result.message,result['data']['jump_url']);
+		}
+	},"JSON");
+});
