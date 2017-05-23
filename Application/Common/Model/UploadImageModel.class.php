@@ -31,7 +31,6 @@ class UploadImageModel extends Model {
 
     public function imageUpload() {
         $res = $this->_uploadObj->upload();
-        print_r($res);
         if($res) {
             return '/' .self::UPLOAD . '/' . $res['file']['savepath'] . $res['file']['savename'];
         }else{

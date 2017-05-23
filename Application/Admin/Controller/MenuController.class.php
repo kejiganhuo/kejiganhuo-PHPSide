@@ -119,4 +119,15 @@ class MenuController extends CommonController {
 				return show(1,'排序成功',array('jump_url'=>$jumpUrl));
 		}
 	}
+	public function getBarMenus(){
+	    $data =array(
+	        'status'=> array('neq',-1),
+            'type' => 0,
+        );
+
+	    $res = $this->_db->where($data)
+	        ->order('listorder desc,menu_id desc')
+            ->select();
+	    return $res;
+    }
 }
