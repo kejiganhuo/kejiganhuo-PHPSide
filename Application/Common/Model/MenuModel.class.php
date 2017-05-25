@@ -87,6 +87,7 @@ class MenuModel extends Model{
 	    $res = $this->_db->where($data)
             ->order('listorder desc,menu_id desc')
             ->select();
+
 	    return $res;
     }
 }

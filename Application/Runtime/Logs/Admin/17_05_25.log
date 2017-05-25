@@ -1,0 +1,161 @@
+[ 2017-05-25T21:25:55+08:00 ] ::1 /kejiganhuo-PHPSide/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\xampp\htdocs\kejiganhuo-PHPSide\Application\Common\Model\MenuModel.class.php 第 5 行.
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2017-05-25T21:26:00+08:00 ] ::1 /kejiganhuo-PHPSide/admin.php?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\xampp\htdocs\kejiganhuo-PHPSide\Application\Common\Model\MenuModel.class.php 第 5 行.
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2017-05-25T21:26:11+08:00 ] ::1 /kejiganhuo-PHPSide/admin.php?c
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\xampp\htdocs\kejiganhuo-PHPSide\Application\Common\Model\MenuModel.class.php 第 5 行.
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2017-05-25T21:28:52+08:00 ] ::1 /kejiganhuo-PHPSide/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\xampp\htdocs\kejiganhuo-PHPSide\Application\Common\Model\MenuModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: a D:\xampp\htdocs\kejiganhuo-PHPSide\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\xampp\htdocs\kejiganhuo-PHPSide\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\xampp\htdocs\kejiganhuo-PHPSide\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\xampp\htdocs\kejiganhuo-PHPSide\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\xampp\htdocs\kejiganhuo-PHPSide\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\xampp\htdocs\kejiganhuo-PHPSide\Application\Common\Common\function.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2017-05-25T21:29:44+08:00 ] ::1 /kejiganhuo-PHPSide/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\xampp\htdocs\kejiganhuo-PHPSide\Application\Common\Model\MenuModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: a D:\xampp\htdocs\kejiganhuo-PHPSide\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\xampp\htdocs\kejiganhuo-PHPSide\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\xampp\htdocs\kejiganhuo-PHPSide\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\xampp\htdocs\kejiganhuo-PHPSide\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\xampp\htdocs\kejiganhuo-PHPSide\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\xampp\htdocs\kejiganhuo-PHPSide\Application\Common\Common\function.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2017-05-25T21:30:07+08:00 ] ::1 /kejiganhuo-PHPSide/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000269s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\xampp\htdocs\kejiganhuo-PHPSide\Application\Common\Model\MenuModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: a D:\xampp\htdocs\kejiganhuo-PHPSide\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\xampp\htdocs\kejiganhuo-PHPSide\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\xampp\htdocs\kejiganhuo-PHPSide\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\xampp\htdocs\kejiganhuo-PHPSide\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\xampp\htdocs\kejiganhuo-PHPSide\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\xampp\htdocs\kejiganhuo-PHPSide\Application\Common\Common\function.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022839s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022862s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000264s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000287s ]
+
+[ 2017-05-25T21:30:21+08:00 ] ::1 /kejiganhuo-PHPSide/admin.php?c=login&a=loginout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined variable: module D:\xampp\htdocs\kejiganhuo-PHPSide\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var D:\xampp\htdocs\kejiganhuo-PHPSide\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\xampp\htdocs\kejiganhuo-PHPSide\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given D:\xampp\htdocs\kejiganhuo-PHPSide\ThinkPHP\Common\functions.php 第 990 行.
+
+[ 2017-05-25T21:30:21+08:00 ] ::1 /kejiganhuo-PHPSide/admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000042s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003070s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000263s ]
+

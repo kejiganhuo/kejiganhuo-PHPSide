@@ -19,7 +19,7 @@ class ContentController extends CommonController {
         $copyFrom = C("COPT_FROM");
         $this->assign('webSiteMenu',$webSiteMenu);
         $this->assign('titleFontColor',$titleFontColor);
-        $this->assign('coptfrom',$copyFrom);
+        $this->assign('copyfrom',$copyFrom);
         $this->display();
     }
 
