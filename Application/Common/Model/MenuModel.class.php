@@ -57,6 +57,7 @@ class MenuModel extends Model{
 		$data['status']=$status;
 		return $this->_db->where('menu_id='.$id)->save($data);
 	}
+
 	public function updateMenuListorderById($id,$listorder){
 		if(!$id || !is_numeric($id)){
 			throw_exception('ID不合法');
@@ -68,6 +69,7 @@ class MenuModel extends Model{
 		
 		return $this->_db->where('menu_id='.$id)->save($data);
 	}
+
 	public function getAdminMenus(){
 	    $data =array(
 	        'status' => array('neq',-1),
@@ -76,5 +78,16 @@ class MenuModel extends Model{
 	    return $this->_db->where($data)->order('listorder desc,menu_id desc')->select();
     }
 
+    public function getBarMenus(){
+	    $data =array(
+	      'status' => array('meq',-1),
+            'type' =>0,
+        );
+
+	    $res = $this->_db->where($data)
+            ->order('listorder desc,menu_id desc')
+            ->select();
+	    return $res;
+    }
 }
 ?>
