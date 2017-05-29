@@ -11,6 +11,7 @@ use Think\Exception;
 class ContentController extends CommonController {
 
     public function index(){
+        $this->assign('webSiteMenu',D("Menu") ->getBarMenus());
         $this->display();
     }
     public function add(){

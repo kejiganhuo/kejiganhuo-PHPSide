@@ -32,9 +32,9 @@
               <span class="input-group-addon">栏目</span>
               <select class="form-control" name="catid">
                 <option value='' >全部分类</option>
-                
-                <option value="" ></option>
-                
+                <foreach name="webSiteMenu" item="sitenav">
+                <option value="{$sitenav.menu_id}" >{$sitenav.name}</option>
+                </foreach>
               </select>
             </div>
           </div>
