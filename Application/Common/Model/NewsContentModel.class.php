@@ -11,7 +11,7 @@ class NewsContentModel extends Model{
     }
 
     public function insert($data=array()){
-        if(!is_array($data) || $data){
+        if(!is_array($data) || !$data){
             return 0;
         }
         $data['create_time'] = time();

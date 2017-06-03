@@ -21,13 +21,13 @@ function getMenuType($type){
 }
 //情况
 function status($status){
-	if($status==0){
+	if($status == 0){
 		$str ='关闭';
 	}
-	elseif($status ==1){
+	elseif($status == 1){
 		$str ='正常';
 	}
-	elseif($status ==-1){
+	elseif($status == -1){
 		$str ='删除';
 	}
 }
@@ -58,4 +58,23 @@ function showKind($status,$data){
 
 function getLoginUsername(){
     return $_SESSION['adminUser']['username'] ? $_SESSION['adminUser']['username'] :'';
+}
+
+function getCatName($navs,$id){
+    foreach ($navs as $nav){
+        $navList[$nav['menu_id']] = $nav['name'];
+    }
+    return isset($navList) ? $navList[$id] : '';
+}
+
+function getCopyFromById($id){
+    $copyFrom = C("COPY_FROM");
+    return $copyFrom[$id] ? $copyFrom[$id] :'';
+}
+
+function isThumb($thumb){
+    if($thumb){
+        return '<span style ="color: red;">有</span>';
+    }
+    return '无';
 }
