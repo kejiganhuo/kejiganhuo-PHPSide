@@ -18,6 +18,7 @@ class MenuModel extends Model{
 		$data['status'] = array('neq',-1);
 		$offset = ($page - 1) * $pageSize;
 		$list = $this->_db->where($data)->order('listorder desc,menu_id desc')->limit($offset,$pageSize)->select();
+		console.log($list);
 		return $list;
 		
 		
@@ -79,14 +80,13 @@ class MenuModel extends Model{
 
     public function getBarMenus(){
 	    $data =array(
-	      'status' => array('meq',-1),
+	      'status' => array('neq',-1),
             'type' =>0,
         );
 
 	    $res = $this->_db->where($data)
             ->order('listorder desc,menu_id desc')
             ->select();
-
 	    return $res;
     }
 }

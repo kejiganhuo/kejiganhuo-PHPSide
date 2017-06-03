@@ -10,7 +10,7 @@ class NewsModel extends Model{
         $this->_db = M('news');
     }
 
-    public function insert($data){
+    public function insert($data = array()){
         if(!is_array($data) || $data){
             return 0;
         }

@@ -50,7 +50,6 @@ class MenuController extends CommonController {
 		$pageSize = $_REQUEST['pageSize'] ? $_REQUEST['pageSize'] : 3;//分页条数
 		$menus = D("Menu")->getMenus($data,$page,$pageSize);
 		$menusCount = D("Menu")->getMenusCount($data);
-		console.log("$menus");
 		//ThinkPHP分页操作
 		$res = new \Think\Page($menusCount,$pageSize);
 		$pageRes = $res->show();
@@ -119,15 +118,5 @@ class MenuController extends CommonController {
 				return show(1,'排序成功',array('jump_url'=>$jumpUrl));
 		}
 	}
-	public function getBarMenus(){
-	    $data =array(
-	        'status'=> array('neq',-1),
-            'type' => 0,
-        );
 
-	    $res = $this->_db->where($data)
-	        ->order('listorder desc,menu_id desc')
-            ->select();
-	    return $res;
-    }
 }

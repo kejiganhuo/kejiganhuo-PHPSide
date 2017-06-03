@@ -57,5 +57,5 @@ function showKind($status,$data){
 }
 
 function getLoginUsername(){
-    return $_SESSION['adminUser']['username'] ? $_SESSION['adminUser']['username'] : '';
+    return $_SESSION['adminUser']['username'] ? $_SESSION['adminUser']['username'] :'';
 }

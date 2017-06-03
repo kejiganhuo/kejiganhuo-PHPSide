@@ -12,18 +12,17 @@ $("#button-add").click(function(){
 */
 $("#singcms-button-submit").click(function(){
 	var data = $("#singcms-form").serializeArray();
-
 	postData={};
 	$(data).each(function(i){
 		postData[this.name] = this.value;
 	});
-	console.log(postData);
 	//将取到的数据post给数据库
 	url=SCOPE.save_url;
 	jump_url=SCOPE.jump_url;
 	$.post(url,postData,function(result){
 		if(result.status == 1){
 			//成功
+			console.log(status);
 			return dialog.success(result.message,jump_url);
 		}else if(result.status == 0){
 			//失败
