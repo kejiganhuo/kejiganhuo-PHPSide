@@ -146,8 +146,8 @@
                                 <td><?php echo ($menus["menu_id"]); ?></td>
                                 <td><?php echo ($menus["name"]); ?></td>
                                 <td><?php echo ($menus["m"]); ?></td>
-                                <td><?php echo ($menus["type"]); ?></td>
-                                <td><?php echo ($menus["status"]); ?></td>
+                                <td><?php echo (getMenuType($menus["type"])); ?></td>
+                                <td><?php echo (status($menus["status"])); ?></td>
                                 <td><span class="glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="<?php echo ($menus["menu_id"]); ?>"></span>    <a href="javascript:void(0)" attr-id="<?php echo ($menus["menu_id"]); ?>" id="singcms-delete"  attr-a="menu" attr-message="删除"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a></td>
                             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 

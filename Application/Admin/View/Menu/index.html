@@ -69,8 +69,8 @@
                                 <td>{$menus.menu_id}</td>
                                 <td>{$menus.name}</td>
                                 <td>{$menus.m}</td>
-                                <td>{$menus.type}</td>
-                                <td>{$menus.status}</td>
+                                <td>{$menus.type|getMenuType}</td>
+                                <td>{$menus.status|status}</td>
                                 <td><span class="glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="{$menus.menu_id}"></span>    <a href="javascript:void(0)" attr-id="{$menus.menu_id}" id="singcms-delete"  attr-a="menu" attr-message="删除"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a></td>
                             </tr>
                         </volist>

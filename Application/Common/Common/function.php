@@ -30,6 +30,7 @@ function status($status){
 	elseif($status == -1){
 		$str ='删除';
 	}
+	return $str;
 }
 //得到菜单
 function getAdminMenuUrl($nav){
@@ -47,7 +48,6 @@ function getActive($navc){
     }
     return '';
 }
-
 function showKind($status,$data){
     header('Content-type:application/json;charset=utf-8');
     if($status==0){

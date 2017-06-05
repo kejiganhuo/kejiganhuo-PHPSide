@@ -12,11 +12,12 @@ class LoginController extends Controller {
 			$this -> redirect('/admin.php?c=index');
 		}
 		//admin.php?c=index
-    	return $this->display();
+    	$this->display();
     }
+
 	public function check(){
-		$username=$_POST['username'];
-		$password=$_POST['password'];
+		$username = $_POST['username'];
+		$password = $_POST['password'];
 		if(!trim($username)){
 			return show(0,'用户名不能为空');
 		}
@@ -25,7 +26,6 @@ class LoginController extends Controller {
 		}
 		
 		$ret = D('Admin')->getAdminByUsername($username);
-		
 		if(!$ret){
 			return show(0,'该用户不存在');
 		}
@@ -33,7 +33,8 @@ class LoginController extends Controller {
 		if($ret['password'] != getMd5Password($password)){
 			return show(0,'密码错误');
 		}
-		
+
+
 		session('adminUser',$ret);
 		return show(1,'登陆成功');
 	}

@@ -169,15 +169,11 @@
                 </tbody>
               </table>
               <nav>
-
-              <ul >
-                
-              </ul>
-
-            </nav>
-              
+                <ul>
+                  <?php echo ($pageres); ?>
+                </ul>
+              </nav>
             </form>
-
           </div>
         </div>
 

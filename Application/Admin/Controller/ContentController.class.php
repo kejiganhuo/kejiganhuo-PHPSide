@@ -28,7 +28,7 @@ class ContentController extends CommonController {
         $count = D("News") -> getNewsCount($conds);
 
         $res = new \Think\Page($count,$pageSize);
-        $pageres = $res -> show();
+        $pageres = $res->show();
 
         $this->assign('pageres'.$pageres);
         $this->assign('news',$news);
