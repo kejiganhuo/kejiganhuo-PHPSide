@@ -64,7 +64,7 @@ function getCatName($navs,$id){
     foreach ($navs as $nav){
         $navList[$nav['menu_id']] = $nav['name'];
     }
-    return isset($navList) ? $navList[$id] : '';
+    return isset($navList[$id]) ? $navList[$id] : '';
 }
 
 function getCopyFromById($id){

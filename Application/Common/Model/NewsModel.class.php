@@ -23,7 +23,7 @@ class NewsModel extends Model{
         if(isset($data['title']) && $data['title']){
             $conditons['title'] = array('like','%',$data['title'],'%');
         }
-        if(isset($data['catid']) && $data['title']) {
+        if(isset($data['catid']) && $data['catid']) {
             $conditons['catid'] = intval($data['catid']);
         }
         $conditons['status'] = array('neq',-1);
@@ -33,17 +33,21 @@ class NewsModel extends Model{
             ->order('listorder desc ,news_id desc')
             ->limit($offset,$pageSize)
             ->select();
+
         return $list;
+
     }
-    public function getNewsCount($data= array()){
+    public function getNewsCount($data = array()){
         $conditons = $data;
         if(isset($data['title']) && $data['title']){
             $conditons['title'] = array('like','%',$data['title'],'%');
 
         }
-        if(isset($data['catid']) && $data['title']) {
+        if(isset($data['catid']) && $data['catid']) {
             $conditons['catid'] = intval($data['catid']);
         }
+        $conditons['status'] = array('neq',1);
+
         return $this->_db->where($conditons)->count();
     }
 

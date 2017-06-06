@@ -74,7 +74,7 @@
                 <volist name="news" id="new">
                   <tr>
                     <td><input type="checkbox" name="pushcheck" value="{$new.news_id}"></td>
-                    <td><input size=4 type='text'  name='' value=""/></td><!--6.7-->
+                    <td><input size=4 type='text'  name='listorder[{$new.news_id}]' value="{$new.listorder}"/></td><!--6.7-->
                     <td>{$new.news_id}</td>
                     <td>{$new.title}</td>
                     <td>{$new.catid|getCatName=$webSiteMenu,###}</td>
@@ -88,17 +88,17 @@
                       <a href="javascript:void(0)" id="singcms-delete"  attr-id=""  attr-message="删除">
                         <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
                       </a>
-
                     </td>
                   </tr>
                 </volist>
-
                 </tbody>
               </table>
               <nav>
-                <ul>
+
+                <ul class="pagination">
                   {$pageres}
                 </ul>
+
               </nav>
             </form>
           </div>

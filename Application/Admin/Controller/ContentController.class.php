@@ -21,15 +21,14 @@ class ContentController extends CommonController {
         }
 
         /*获取页面数据*/
-        $page = $_REQUEST['p'] ? $_REQUEST['p'] : 1;
-        $pageSize = 3;
+        $page= $_REQUEST['p'] ? $_REQUEST['p'] : 1;
+        $pageSize = 3;//分页条数
 
         $news = D("News") -> getNews($conds,$page,$pageSize);
         $count = D("News") -> getNewsCount($conds);
 
         $res = new \Think\Page($count,$pageSize);
         $pageres = $res->show();
-
         $this->assign('pageres'.$pageres);
         $this->assign('news',$news);
 
